@@ -36,3 +36,35 @@ end
 { "name" => "Alice", "age" => 30 }.each do |key, value|
   puts "#{key}: #{value}"
 end
+
+for i in 1..20
+  if i % 3 == 0 && i % 5 == 0
+    puts 'fizzbuzz'
+  elsif i % 5 == 0
+    puts 'buzz'
+  elsif i % 3 == 0
+    puts 'fizz'
+  else
+    puts i
+  end
+end
+
+(1..100).each do |i|
+  if i % 3 == 0 && i % 5 == 0 && i % 7 == 0
+    puts 'FizzBuzzSuper'
+  elsif i % 3 == 0 && i % 7 == 0
+    puts 'FizzSuper'
+  elsif i % 5 == 0 && i % 7 == 0
+    puts 'BuzzSuper'
+  elsif i % 3 == 0 && i % 5 == 0
+    puts 'FizzBuzz'
+  elsif i % 3 == 0
+    puts 'Fizz'
+  elsif i % 5 == 0
+    puts 'Buzz'
+  elsif i % 7 == 0
+    puts 'Super'
+  else
+    puts i
+  end
+end
